@@ -3,6 +3,7 @@ from typing import List
 
 HYPHEN_E_DOT = "-e ."
 
+
 def get_requirements(file_path: str) -> List[str]:
     """This function will return the list of requirements.
 
@@ -21,6 +22,7 @@ def get_requirements(file_path: str) -> List[str]:
             requirements.remove(HYPHEN_E_DOT)
 
     return requirements
+
 
 setup(
     name="e2e_practice_project",
