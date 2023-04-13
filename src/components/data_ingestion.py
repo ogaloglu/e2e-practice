@@ -5,7 +5,7 @@ from dataclasses import dataclass
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-from src.exception import CustromException
+from src.exception import CustomException
 from src.components.data_transformation import DataTransformation
 from src.components.data_transformation import DataTransformationConfig
 from src.logger import logging
@@ -52,7 +52,7 @@ class DataIngestion:
                 self.ingestion_config.test_data_path,
             )
         except Exception as e:
-            raise CustromException(e, sys)
+            raise CustomException(e, sys)
 
 
 if __name__ == "__main__":
