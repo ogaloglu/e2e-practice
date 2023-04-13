@@ -133,3 +133,6 @@ dmypy.json
 
 # pycharm related files
 .idea/
+
+# additionl directories
+artifact/
