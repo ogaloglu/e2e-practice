@@ -5,7 +5,7 @@ import dill
 from sklearn.metrics import r2_score
 from sklearn.model_selection import GridSearchCV
 
-from src.exception import CustromException
+from src.exception import CustomException
 
 
 def save_object(file_path, obj):
@@ -17,7 +17,7 @@ def save_object(file_path, obj):
             dill.dump(obj, f)
 
     except Exception as e:
-        raise CustromException(e, sys)
+        raise CustomException(e, sys)
 
 
 def evaluate_models(X_train, y_train, X_test, y_test, models, param):
